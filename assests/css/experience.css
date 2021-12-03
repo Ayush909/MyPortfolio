@@ -1,0 +1,119 @@
+
+html{
+    font-family: sans-serif;
+}
+
+
+
+
+.timeline{
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    color: #000;
+}
+
+.timeline ul{
+    list-style: none;
+}
+
+.timeline ul li{
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #1e1f22;
+    transition: background-color 0.6s ease-in;
+}
+
+
+
+.timeline ul li:hover{
+    background-color: #0A192F;
+    color: rgba(255, 255, 255, 0.88);
+}
+.timeline ul li:hover a{
+    color: rgba(255, 255, 255, 0.88);
+}
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-content h1{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.timeline-content span{
+    font-size: 12px;
+}
+
+.timeline-content h3{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.timeline-content h3 a{
+    text-decoration: none;
+    color: #000;
+}
+
+.timeline-content p{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+@media screen and (min-width : 768px){
+    
+    .timeline::before{
+        content: '';
+        height: 100%;
+        width: 1.5px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #000;
+    }
+    
+    .timeline ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline ul li:nth-child(odd){
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even){
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .timeline ul li::after{
+        content: '';
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.993);
+        border-radius: 50%;
+        top: 0;
+    }
+    .timeline ul li:nth-child(odd)::after{
+        right: -30px;
+        transform: translate(50%,-50%);
+    }
+    .timeline ul li:nth-child(even)::after{
+        left: -30px;
+        transform: translate(-50%,50%);
+    }
+
+    .timeline ul li:hover::after{
+        background-color: #DA2C38;
+    }
+
+}
