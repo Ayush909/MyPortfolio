@@ -8,6 +8,14 @@ const projects = [
         link : "http://instagram-ayush.herokuapp.com/",
         type : "fs"        
     },
+    ,
+    {    
+        title : "Restaurant UI/UX",
+        body : "A Restaurant landing page made using ReactJS, HTML & CSS",
+        img : "assests/img/restaurant.png",
+        link : "https://reactui-restaurant.netlify.app/",
+        type : 'fe'    
+    },
     {    
         title : "Blogging CMS",
         body : "A Blogging Content Management System using React-Admin.",
