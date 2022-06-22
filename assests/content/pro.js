@@ -36,6 +36,13 @@ const projects = [
         img : "assests/img/blogvlog.jpg",
         link : "https://blogvlog.netlify.app/",
         type : 'fe'    
+    },
+    {
+        title : "JS Clock",
+        body : "Simple clock using vanilla javascript.",
+        img : "assests/img/clock.gif",
+        link : "https://codepen.io/ayush909/pen/LYQKxZG",
+        type : 'des' 
     }
 ]
 
