@@ -6,6 +6,10 @@
     padding: 30px 50px;
 }
 
+.about-content{
+    /* text-align: left; */
+}
+
 .about-content ul {
     list-style-type: none;
     margin-top: 10px;
@@ -15,12 +19,15 @@
     width: 100%;
 }
 
+.about_body_skills{
+    color: #454040;
+    font-weight: bold;
+}
+
 @media screen and (min-width:769px){
     #about .container{
         flex-wrap: nowrap;
-        padding-top: 0px;
+        /* padding-top: 0px; */
     }
-    .about-content{
-        text-align: center;
-    }
+    
 }
