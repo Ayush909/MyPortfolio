@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Instagram Clone",
-    body: "Instagram Clone using MERN Stack.",
+    body: "Instagram Clone using ReactJS, NodeJS, MongoDB & ExpressJS",
     img: "assests/img/insta.jpg",
     link: "http://instagram-ayush.herokuapp.com/",
     type: "fs",

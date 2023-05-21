@@ -1,96 +1,110 @@
 /* Controls */
-.controls{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-    padding: 0 30px;
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding: 0 30px;
 }
 
-ul.controls li{
-    list-style: none;
-    padding: 5px;
-    border: 2px solid #000;
-    margin: 5px;
-    cursor: pointer;
-    min-width: 100px;
-    text-align: center;
-    border-radius: 0.25rem;
+ul.controls li {
+  list-style: none;
+  padding: 5px;
+  border: 2px solid #000;
+  margin: 5px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 0.25rem;
 }
-ul.controls li.active{
-    background: #0A192F;
-    color: #fff;
-}
-.hide{
-    display: none;
+ul.controls li.active {
+  background: #0a192f;
+  color: #fff;
 }
 
-.card.activecard{
-    display: block;
+ul.controls li:is(:hover, :focus) {
+  background-color: hsl(0, 0%, 20%);
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+.card.activecard {
+  display: block;
 }
 /* **** */
 
-.cards-grid{
-    display: grid;
-    grid-template-columns: auto;
+.cards-grid {
+  display: grid;
+  grid-template-columns: auto;
 }
 
-.card{
-    font-family: 'Roboto Slab', serif;
-    margin: 10px;
-    border: 1px solid #ccc;
-    position: relative;
-    max-width: 300px;
+.card {
+  font-family: "Roboto Slab", serif;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+  max-width: 300px;
 }
-.card-img{
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-    max-height: 300px;
+.card-img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  max-height: 300px;
 }
-.card-content{
-    padding: 0 10px;
-}
-
-.card-title{
-    font-size: 18px;
-    margin-top: 5px;
-}
-.card-body{
-    font-size: 16px;
-    padding : 10px 0 60px 0;
+.card-content {
+  padding: 0 10px;
 }
 
-
-.button{
-    background: #000;
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    position: absolute;
-    bottom: 5px;
+.card-title {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.card-body {
+  font-size: 16px;
+  margin: 0.5rem 0;
 }
 
-@media screen and (min-width: 426px){
-    .cards-grid{
-        grid-template-columns: auto auto;
-    }
+.button {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  margin: 0.5rem 0;
 }
 
-@media screen and (min-width: 769px){
-    .cards-grid{
-        grid-template-columns: auto auto auto;
-    }
+.button:is(:hover, :focus) {
+  background-color: hsl(0, 0%, 20%);
 }
 
+@media screen and (min-width: 426px) {
+  .cards-grid {
+    grid-template-columns: auto auto;
+  }
+}
 
-@media screen and (min-width: 1024px){
-    .controls{
-        margin: 0;
-    }
-    .cards-grid{
-        grid-template-columns: auto auto auto;
-        margin: 80px 80px 0 80px ;
-    }
+@media screen and (min-width: 769px) {
+  .cards-grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .controls {
+    margin: 0;
+  }
+  .cards-grid {
+    grid-template-columns: auto auto auto;
+    margin: 80px 80px 0 80px;
+  }
 }
